@@ -11,7 +11,9 @@ public class RegistroCliente {
     private static Image licenciaB;
     private static String Dirrecion;
 
-
+    /**
+     * Adapter from facebook data to app data
+     */
     public void getFacebookData() {
         String[] data = facebook.Login();
         RegistroCliente.firstName = data[1];
