@@ -22,19 +22,25 @@ public class RegistroCliente {
         getProfilePic(profileImageUrl);
 
     }
-
+	/**
+     * get other data from user
+     */
     public void getAppData(String dirrecion, Image licenciaA, Image licenciaB){
         RegistroCliente.Dirrecion=dirrecion;
         RegistroCliente.licenciaA=licenciaA;
         RegistroCliente.licenciaB=licenciaB;
     }
-
+	/**
+     * Download facebook profile photo
+     */
     public void getProfilePic(String url){
         // donwload profile pic and set it
     }
 }
-// Abstract class for facebook login
-
+/**
+* Abstract class for facebook login
+*@return facebook data 
+*/
 class facebook{
     protected static String[] Login() {
         String[] data = new String[0];
